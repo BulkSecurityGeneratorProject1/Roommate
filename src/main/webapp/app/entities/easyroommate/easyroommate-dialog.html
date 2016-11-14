@@ -24,6 +24,9 @@
             <input type="text" class="form-control" name="address" id="field_address"
                     ng-model="vm.easyroommate.address"
                      />
+            <ng-map zoom="18" center="{{vm.easyroommate.address}}" style="width:100%; height:320px">
+      			<marker position="{{vm.easyroommate.address}}" title="{{address}}"></marker>   
+    		</ng-map>
         </div>
         <div class="form-group">
             <label class="control-label" data-translate="roommateApp.easyroommate.phone" for="field_phone">Phone</label>
